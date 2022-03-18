@@ -1,0 +1,238 @@
+:root {
+  --primary-black: rgb(33, 36, 46);
+  --secendary-black: rgb(51, 55, 71);
+  --hover: rgb(39, 42, 54);
+}
+
+.main-container {
+  background-color: var(--primary-black);
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  user-select: none;
+}
+
+.secondary-bg {
+  background-color: var(--secendary-black);
+}
+
+.add-task {
+  margin: auto;
+  width: 40%;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .add-task {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .add-task {
+    width: 100%;
+  }
+}
+
+.task-item {
+  background-color: var(--secendary-black);
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 0.5px #1a1a1a;
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: lightgray;
+  font-weight: 600;
+}
+
+.click {
+  cursor: pointer;
+}
+
+input[type="time"],
+input[type="date"] {
+  letter-spacing: 2px;
+  padding: 6px 20px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.time-input {
+  width: 70px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.period-btn {
+  width: 70px;
+  text-align: center;
+  user-select: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.period-btn:hover {
+  background-color: var(--hover);
+}
+
+@media only screen and (max-width: 400px) {
+  .period-btn {
+    width: 50px;
+  }
+  .time-input {
+    width: 50px;
+  }
+  .time-dropdown {
+    width: 50px;
+  }
+}
+
+.select-none {
+  user-select: none;
+}
+
+.dropdown-list {
+  background-color: var(--secendary-black);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+.dropdown-list > li {
+  list-style: none;
+  padding: 3px 10px;
+  border-radius: 8px;
+}
+
+.dropdown-list > li:hover {
+  background-color: var(--hover);
+}
+
+.time-dropdown {
+  width: 70px;
+  align-self: flex-start;
+  text-align: center;
+  height: max-content;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.time-dropdown::-webkit-scrollbar {
+  width: 0px;
+}
+
+.time-dropdown > * {
+  padding: 3px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.time-dropdown > *:hover {
+  background-color: var(--hover);
+}
+
+.selected-btn {
+  background-color: rgb(43, 44, 64);
+}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.modal-body {
+  background-color: transparent;
+  margin: 10% auto;
+  /* padding: 20px; */
+  width: fit-content;
+  border-radius: 8px;
+  /* padding-bottom: 50px; */
+}
+
+.close {
+  background-color: transparent;
+  color: red;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  margin-top: -15px;
+  margin-right: -5px;
+  cursor: pointer;
+}
+.close:hover {
+  color: firebrick;
+}
+
+.badge {
+  background-color: crimson;
+  padding: 3px 6px;
+  margin-top: -2px;
+  position: relative;
+  right: 15px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 2px 2px black;
+  border-radius: 40px;
+}
+
+.task-list {
+  overflow-y: auto;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 0px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.coming-soon {
+  background-color: rgb(9, 209, 36);
+}
+
+.canceled {
+  background-color: grey;
+}
+
+.closed {
+  background-color: red;
+}
+
+.task-list-item {
+  padding: 5px 20px;
+  /* background-color: hotpink; */
+}
+
+.divider {
+  width: 94%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 15px;
+  margin-left: 20px;
+}

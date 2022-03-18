@@ -1,0 +1,77 @@
+.custom-calendar {
+  background-color: var(--secendary-black) !important;
+  margin: auto;
+}
+
+@media only screen and (max-width: 350px) {
+  .custom-calendar {
+    margin-left: -4%;
+  }
+}
+
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+.Calendar__monthArrow {
+  background-image: url("https://i.ibb.co/H2fFVw5/upward.png") !important;
+}
+
+.Calendar__monthText {
+  color: #ffffff !important;
+}
+.Calendar__monthText:hover {
+  background-color: var(--primary-black) !important;
+}
+.Calendar__yearText {
+  color: #ffffff !important;
+}
+.Calendar__yearText:hover {
+  background-color: var(--primary-black) !important;
+}
+
+.Calendar__monthSelector {
+  background-color: var(--secendary-black) !important;
+}
+
+.Calendar__monthSelectorItemText {
+  color: #ffffff !important;
+}
+.Calendar__monthSelectorItemText:hover {
+  background-color: var(--hover) !important;
+}
+.Calendar__yearSelector {
+  background-color: var(--secendary-black) !important;
+}
+.Calendar__yearSelectorText {
+  color: #ffffff !important;
+}
+.Calendar__yearSelectorText:hover {
+  background-color: var(--hover) !important;
+}
+.Calendar__day.-disabled {
+  color: rgba(132, 136, 143, 0.87) !important;
+}
+.Calendar__day.-disabled:hover {
+  background: transparent;
+}
+.Calendar__yearSelectorWrapper.-faded::after,
+.Calendar__yearSelectorWrapper.-faded::before {
+  opacity: 0;
+  z-index: 0;
+}
+
+.Calendar__day {
+  color: #ffffff !important;
+}
+.Calendar__day:hover {
+  background-color: var(--hover) !important;
+}
+
+.custom-today-day {
+  color: #00b442 !important;
+  border: 2px solid #00b442 !important;
+  position: inherit !important;
+}
