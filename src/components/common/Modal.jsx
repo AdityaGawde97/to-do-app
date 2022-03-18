@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 export const Modal = ({ show, children, onClose }) => {
   if (show) {
     return (
